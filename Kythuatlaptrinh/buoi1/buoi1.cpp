@@ -3,13 +3,13 @@
 using namespace std;
 
 int main() {
-	int a = 5;
+	/*int a = 5;
 	int* p = &a;
 	a += 6;
 	a = *p + 2;
-	cout << *p;
+	cout << *p;*/
 
-	/*vector <float>
+	vector <float>
 		diemthi;
 	diemthi.push_back(5.5);
 	diemthi.push_back(4);
@@ -17,5 +17,5 @@ int main() {
 	diemthi.pop_back();
 	for (int i = 0; i < diemthi.size(); i++) {
 		cout << diemthi[i] << endl;
-	}*/
+	}
 }
