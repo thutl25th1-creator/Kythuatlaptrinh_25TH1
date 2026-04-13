@@ -166,7 +166,7 @@ struct LinkedList {
 
 			in.read(reinterpret_cast<char*>(&b.author.id), sizeof(b.author.id));
 
-			
+
 			size_t authornamelength;
 			in.read(reinterpret_cast<char*>(&authornamelength), sizeof(authornamelength));
 			b.author.name.resize(authornamelength);
@@ -175,7 +175,7 @@ struct LinkedList {
 			Node* newNode = new Node;
 			newNode->Create(b);
 			AddFirst(newNode);
-	}
+		}
 		in.close();
 };
 
