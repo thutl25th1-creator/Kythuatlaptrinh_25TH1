@@ -12,6 +12,8 @@ struct LinkedList {
 	bool Remove(int id);
 	bool Update(int id);
 	void Find(string userName);
+	void Export(string fileName);
+	void Import(string fileName);
 };
 
 template<typename T>
@@ -22,7 +24,7 @@ void LinkedList<T>::Find(string userName) {
 	} 
 	Node<T>* item = head;
 	while (item != NULL) {
-		if (item->data.userName == userName) {
+		if (item->data.usr == userName) {
 			cout << item->data << endl;
 			return;
 		}

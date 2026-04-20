@@ -66,11 +66,12 @@ int main()
 				break;
 			}
 			case 6: {
-				
+				accounts.Export("25TH1.dla");
+				cout << "Exported successfully" << endl;
 				break;
 			}
 			case 7: {
-				
+			   accounts.Import("25TH1.dla");
 				break;
 			}
 			case 0: {
