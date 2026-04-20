@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Account.h"
 #include "LinkedList.h"
+#include <string>
 using namespace std;
 
 int main()
@@ -57,7 +58,11 @@ int main()
 				break;
 			}
 			case 5: {
-				
+				string userName;
+				cout << "Enter account name: ";
+				cin.ignore();
+				getline(cin, userName);
+				accounts.Find(userName);
 				break;
 			}
 			case 6: {
