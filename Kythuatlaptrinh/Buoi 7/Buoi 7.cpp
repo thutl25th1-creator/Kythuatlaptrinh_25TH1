@@ -24,74 +24,59 @@ int main()
 			switch (choice)
 			{
 			case 1: {
-				account.Show();
+				accounts.Show();
 				break;
 			}
 			case 2: {
-				//Book b;
-				//cin >> b;
-				/*Node* newNode = new Node;
-				newNode->Create(b);
-				books.AddFirst(newNode);*/
+				Account a;
+				cin >> a;
+				accounts.Add(a);
 				break;
 			}
 			case 3: {
-				/*int removeId;
-				cout << "Enter book's id to remove: ";
-				cin >> removeId;
-				bool res = books.Remove(removeId);
+				int removeId;
+				cout << "Enter account Id to remove: ";
+					cin >> removeId;
+					bool res = accounts.Remove(removeId);
 				if (res)
-					cout << "Remove book successfully" << endl;
+						cout << "Remove account with id: " << removeId << endl;
 				else
-					cout << "Invalid book id" << endl;*/
+						cout << "Not found account id: " << removeId << endl;
 				break;
 			}
 			case 4:
 			{
-				/*int updateId;
-				cout << "Enter book's id to update: ";
+				int updateId;
+				cout << "Enter account Id to update: ";
 				cin >> updateId;
-				bool res = books.Update(updateId);
+				bool res = accounts.Update(updateId);
 				if (res)
-					cout << "Update book successfully" << endl;
+					cout << "Update account with id: " << updateId << endl;
 				else
-					cout << "Invalid book id" << endl;*/
+					cout << "Not found account id: " << updateId << endl;
 				break;
 			}
 			case 5: {
-				/*tring bookName;
-				cout << "Enter book's name to find: ";
-				cin.ignore();
-				getline(cin, bookName);
-				Book* res = books.Find(bookName);
-				if (res != NULL) {
-					cout << *res;
-				}
-				else {
-					cout << "No book with name: " << bookName << endl;
-				}*/
+				
 				break;
 			}
 			case 6: {
-				//books.Export("25TH1.dla");
-				//cout << "Exported successfully" << endl;
+				
 				break;
 			}
 			case 7: {
-				//books.Import("25TH1.dla");
+				
 				break;
 			}
 			case 0: {
 				return 0;
 			}
 			default: {
-				//cout << "Invalid choice, try again" << endl;
+				
 				break;
 			}
 			}
-			/*system("pause");
-			cout << "Press any key to continue.....";*/
-
+			
 
 		} while (true);
 	}
