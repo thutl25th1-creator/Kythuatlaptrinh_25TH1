@@ -3,7 +3,7 @@ using namespace std;
 
 struct Account {
 	int id;
-	string lnk, usr, pwd, desc;
+	char lnk[50], usr[50], pwd[50], desc[50];
 	friend ostream& operator<<(ostream& os, Account& b) {
 		os << " Account information : " << endl;
 		os << "\t+Id:" << b.id << endl;
@@ -19,13 +19,13 @@ struct Account {
 		in >> b.id;
 		cout << "\t+ Link: ";
 		in.ignore();
-		getline(in, b.lnk);
+		in.getline(b.lnk, 50);
 		cout << "\t+ User name: ";
-		getline(in, b.usr);
+		in.getline(b.usr, 50);
 		cout << "\t+ Password: ";
-		getline(in, b.pwd);
+		in.getline(b.pwd, 50);
 		cout << "\t+ Description: ";
-		getline(in, b.desc);
+		in.getline(b.desc,50);
 		return in;
 	}
 };

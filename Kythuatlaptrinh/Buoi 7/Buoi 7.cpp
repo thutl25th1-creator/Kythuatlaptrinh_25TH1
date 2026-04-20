@@ -78,7 +78,7 @@ int main()
 				return 0;
 			}
 			default: {
-				
+				cout << "Invalid choice, try again" << endl;
 				break;
 			}
 			}

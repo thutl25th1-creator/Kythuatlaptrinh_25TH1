@@ -1,3 +1,4 @@
+#include <fstream>
 template <typename T>
 struct Node {
 	T data;
@@ -16,6 +17,34 @@ struct LinkedList {
 	void Import(string fileName);
 };
 
+template<typename T>
+void LinkedList<T>::Export(string flieName) {
+	ofstream outFile(fileName, ios::binary);
+	if (!outFile) {
+		cout << "Error opening file for writing" << endl;
+		return;
+	}
+	Node<T>* item = head;
+	while (item != NULL) {
+		outFile.write(reinterpret_cast<char*>(&item->data), sizeof(T));
+		item = item->next;
+	}
+	outFile.close();
+}
+
+template<typename T>
+void LinkedList<T>::Import(string flieName) {
+	ofstream oinFile(fileName, ios::binary);
+	if (!oinFile) {
+		cout << "Error opening file for reading" << endl;
+		return;
+	}
+	T item;
+	while(inFile.read(reinterpret_cast<char*>(&item), sizeof(T)) {
+		Add(item);
+	}
+	inFile.close();
+}
 template<typename T>
 void LinkedList<T>::Find(string userName) {
 	if (!head) {
