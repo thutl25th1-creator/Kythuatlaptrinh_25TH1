@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{15a91ce4-ae49-44a6-84ca-29e1dc59a9de}</ProjectGuid>
-    <RootNamespace>Buoi7</RootNamespace>
+    <ProjectGuid>{8405e980-c885-4ab8-8c78-44966e3b76a4}</ProjectGuid>
+    <RootNamespace>KyThuat</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,12 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Buoi 7.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Account.h" />
-    <ClInclude Include="LinkedList.h" />
-    <ClInclude Include="Product.h" />
+    <ClCompile Include="KyThuat.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

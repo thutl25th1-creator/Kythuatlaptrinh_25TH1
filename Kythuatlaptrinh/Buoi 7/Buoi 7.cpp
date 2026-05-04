@@ -1,12 +1,15 @@
 #include <iostream>
 #include "Account.h"
 #include "LinkedList.h"
+#include "Product.h"
+#include <vector>
 #include <string>
 using namespace std;
 
 int main()
 {
 		LinkedList<Account> accounts = { NULL };
+		LinkedList<Account> products = { NULL };
 		do {
 			system("cls");
 			cout << "-------- ACCOUNT MANAGEMENT ---------" << endl;

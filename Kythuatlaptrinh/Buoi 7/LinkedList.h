@@ -19,7 +19,7 @@ struct LinkedList {
 
 template<typename T>
 void LinkedList<T>::Export(string flieName) {
-	ofstream outFile(fileName, ios::binary);
+	ofstream outFile(flieName, ios::binary);
 	if (!outFile) {
 		cout << "Error opening file for writing" << endl;
 		return;
@@ -34,17 +34,18 @@ void LinkedList<T>::Export(string flieName) {
 
 template<typename T>
 void LinkedList<T>::Import(string flieName) {
-	ofstream oinFile(fileName, ios::binary);
-	if (!oinFile) {
+	ifstream inFile(flieName, ios::binary);
+	if (!inFile) {
 		cout << "Error opening file for reading" << endl;
 		return;
 	}
 	T item;
-	while(inFile.read(reinterpret_cast<char*>(&item), sizeof(T)) {
+	while (inFile.read(reinterpret_cast<char*>(&item), sizeof(T))) {
 		Add(item);
 	}
 	inFile.close();
 }
+
 template<typename T>
 void LinkedList<T>::Find(string userName) {
 	if (!head) {
