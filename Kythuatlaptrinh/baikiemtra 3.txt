@@ -1,0 +1,9 @@
+﻿Build started at 3:23 PM...
+1>------ Build started: Project: baikiemtra3, Configuration: Debug x64 ------
+1>baikiemtra3.cpp
+1>C:\Users\Administrator\source\repos\Kythuatlaptrinh_25TH1\Kythuatlaptrinh\baikiemtra3\baikiemtra3.cpp(16,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+1>C:\Users\Administrator\source\repos\Kythuatlaptrinh_25TH1\Kythuatlaptrinh\baikiemtra3\baikiemtra3.cpp(17,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+1>baikiemtra3.vcxproj -> C:\Users\Administrator\Source\Repos\Kythuatlaptrinh_25TH1\Kythuatlaptrinh\x64\Debug\baikiemtra3.exe
+1>Done building project "baikiemtra3.vcxproj".
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+========== Build completed at 3:23 PM and took 01.321 seconds ==========
